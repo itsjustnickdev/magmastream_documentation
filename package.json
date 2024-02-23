@@ -1,0 +1,30 @@
+{
+  "name": "magmastream-docs",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@nuxt-themes/docus": "^1.12.1",
+    "@nuxt/devtools": "^0.5.5",
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxtjs/plausible": "^0.2.1",
+    "@types/node": "^20.2.5",
+    "eslint": "^8.42.0",
+    "nuxt": "^3.6.2"
+  },
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Abel Purnwasy",
+    "email": "business@abelpurnwasy.com",
+    "url": "https://abelpurnwasy.com"
+  },
+  "repository": {
+    "url": "https://github.com/Blackfort-Hosting/magmastream/tree/docs"
+  }
+}
