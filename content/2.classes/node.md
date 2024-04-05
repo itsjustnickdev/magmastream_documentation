@@ -23,6 +23,7 @@ new Magmastream.Node(options: NodeOptions)
 | `resumeStatus`  | `boolean` | Whether to resume the previous session. If false music will halt instantly. |
 | `resumeTimeout` | `number`  | How load to wait before resuming.                                           |
 | `secure`        | `boolean` | Whether the host uses SSL.                                                  |
+| `priority`      | `number`  | Set the priority level of your node.                                        |
 
 ::
 ::

@@ -19,6 +19,7 @@ new Magmastream.Manager(options: ManagerOptions)
 | `autoPlay`              | `boolean`  | Whether players should automatically play the next song.              |
 | `cliendId`              | `string`   | The client ID to use.                                                 |
 | `nodes`                 | `array`    | The array of nodes to connect to.                                     |
+| `usePriority`           | `boolean`  | Whether to use priority mode for selecting nodes.                     |
 | `plugins`               | `array`    | An array of plugins to use.                                           |
 | `shards`                | `number`   | The shard count.                                                      |
 | `trackPartial`          | `string[]` | An array of track properties to keep. `track` will always be present. |
@@ -40,25 +41,25 @@ Function to send data to the websocket.
 
 ## Overview
 
-| Properties                                  | Methods                               | Events                                  |
-| ------------------------------------------- | :------------------------------------ | --------------------------------------- |
-| [nodes](#nodes)                             | [create](#create)                     | [nodeCreate](#nodecreate)               |
-| [options](#options)                         | [createNode](#createnode)             | [nodeDestroy](#nodedestroy)             |
-| [players](#players)                         | [decodeTrack](#decodetrack)           | [nodeConnect](#nodeconnect)             |
-| [leastPlayersNodes](#get-leastplayersnodes) | [decodeTracks](#decodetracks)         | [nodeReconnect](#nodereconnect)         |
-|                                             | [destroy](#destroy)                   | [nodeDisconnect](#nodedisconnect)       |
-|                                             | [destroyNode](#sdestroynode)          | [nodeError](#nodeerror)                 |
-|                                             | [get](#get)                           | [nodeRaw](#noderaw)                     |
-|                                             | [init](#init)                         | [playerCreate](#playercreate)           |
-|                                             | [search](#search)                     | [playerDestroy](#playerdestroy)         |
-|                                             | [updateVoiceState](#updatevoicestate) | [queueEnd](#queueend)                   |
-|                                             |                                       | [playerMove](#playermove)               |
-|                                             |                                       | [trackStart](#trackstart)               |
-|                                             |                                       | [trackEnd](#trackend)                   |
-|                                             |                                       | [trackStuck](#trackstuck)               |
-|                                             |                                       | [trackError](#trackerror)               |
-|                                             |                                       | [socketClosed](#socketclosed)           |
-|                                             |                                       | [playerStateUpdate](#playerstateupdate) |
+| Properties                        | Methods                               | Events                                  |
+| --------------------------------- | :------------------------------------ | --------------------------------------- |
+| [nodes](#nodes)                   | [create](#create)                     | [nodeCreate](#nodecreate)               |
+| [options](#options)               | [createNode](#createnode)             | [nodeDestroy](#nodedestroy)             |
+| [players](#players)               | [decodeTrack](#decodetrack)           | [nodeConnect](#nodeconnect)             |
+| [useableNodes](#get-useablenodes) | [decodeTracks](#decodetracks)         | [nodeReconnect](#nodereconnect)         |
+|                                   | [destroy](#destroy)                   | [nodeDisconnect](#nodedisconnect)       |
+|                                   | [destroyNode](#sdestroynode)          | [nodeError](#nodeerror)                 |
+|                                   | [get](#get)                           | [nodeRaw](#noderaw)                     |
+|                                   | [init](#init)                         | [playerCreate](#playercreate)           |
+|                                   | [search](#search)                     | [playerDestroy](#playerdestroy)         |
+|                                   | [updateVoiceState](#updatevoicestate) | [queueEnd](#queueend)                   |
+|                                   |                                       | [playerMove](#playermove)               |
+|                                   |                                       | [trackStart](#trackstart)               |
+|                                   |                                       | [trackEnd](#trackend)                   |
+|                                   |                                       | [trackStuck](#trackstuck)               |
+|                                   |                                       | [trackError](#trackerror)               |
+|                                   |                                       | [socketClosed](#socketclosed)           |
+|                                   |                                       | [playerStateUpdate](#playerstateupdate) |
 
 ### Events
 
@@ -238,11 +239,11 @@ Function to send data to the websocket.
 > | ----------------------------------------------- | :------------------------------- |
 > | Collection<string, [Player](../classes/player)> | new Collection<string, Player>() |
 
-#### • `get` leastPlayersNodes
+#### • `get` useableNodes
 
-> | Type                                        |
-> | ------------------------------------------- |
-> | Collection<string, [Node](../classes/node)> |
+> | Type                    |
+> | ----------------------- |
+> | [Node](../classes/node) |
 
 ### Methods
 
