@@ -47,7 +47,7 @@ new Magmastream.Player(options: PlayerOptions)
 | [voiceChannel](#voicechannel)           | [setTrackRepeat](#settrackrepeat)             |
 | [voiceState](#voicestate)               | [setVoiceChannel](#setvoicechannel)           |
 | [volume](#volume)                       | [setVolume](#setvolume)                       |
-| [isAutoplay](#isAutoplay)               | [setAutoplay](#setAutoplay)                   |
+| [isAutoplay](#isautoplay)               | [setAutoplay](#setautoplay)                   |
 |                                         | [stop](#stop)                                 |
 
 ### Properties
@@ -399,10 +399,10 @@ new Magmastream.Player(options: PlayerOptions)
 >
 > Returns: `this`
 >
-> | Parameter      | Type       |
-> | -------------- | ---------- |
-> | autoplayState  | boolean    |
-> | BotUser        | ClientUser |
+> | Parameter     | Type       |
+> | ------------- | ---------- |
+> | autoplayState | boolean    |
+> | BotUser       | ClientUser |
 
 #### • stop()
 
