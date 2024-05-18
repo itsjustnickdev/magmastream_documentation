@@ -16,6 +16,7 @@
 | [uri](#uri)               |                                           |
 | [artworkUrl](#artworkurl) |                                           |
 | [sourceName](#sourcename) |                                           |
+| [customData](#customdata) |                                           |
 
 ### Properties
 
@@ -114,6 +115,14 @@
 > | Type   |
 > | ------ |
 > | string |
+
+#### • customData
+
+> Add your own data to the track.
+>
+> | Type                    |
+> | ----------------------- |
+> | Record<string, unknown> |
 
 ### Methods
 
