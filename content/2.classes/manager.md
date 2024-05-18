@@ -14,18 +14,18 @@ new Magmastream.Manager(options: ManagerOptions)
 
 ## Properties
 
-| Options                 | Type                         | Description                                                           |
-| ----------------------- | :--------------------------- | --------------------------------------------------------------------- |
-| `autoPlay`              | `boolean`                    | Whether players should automatically play the next song.              |
-| `cliendId`              | `string`                     | The client ID to use.                                                 |
-| `nodes`                 | `array`                      | The array of nodes to connect to.                                     |
-| `usePriority`           | `boolean`                    | Whether to use priority mode for selecting nodes.                     |
-| `useNode`               | `"leastLoad\|leastPlayers"`  | Use the least amount of players or least load?                        |
-| `plugins`               | `array`                      | An array of plugins to use.                                           |
-| `shards`                | `number`                     | The shard count.                                                      |
-| `trackPartial`          | `string[]`                   | An array of track properties to keep. `track` will always be present. |
-| `defaultSearchPlatform` | `string`                     | The search platform to use to query songs.                            |
-| `replaceYouTubeCredentials` | `boolean`                | Whether the YouTube video titles should be replaced if the Author does not exactly match.                            |
+| Options                     | Type                        | Description                                                                               |
+| --------------------------- | :-------------------------- | ----------------------------------------------------------------------------------------- |
+| `autoPlay`                  | `boolean`                   | Whether players should automatically play the next song.                                  |
+| `cliendId`                  | `string`                    | The client ID to use.                                                                     |
+| `nodes`                     | `array`                     | The array of nodes to connect to.                                                         |
+| `usePriority`               | `boolean`                   | Whether to use priority mode for selecting nodes.                                         |
+| `useNode`                   | `"leastLoad\|leastPlayers"` | Use the least amount of players or least load?                                            |
+| `plugins`                   | `array`                     | An array of plugins to use.                                                               |
+| `shards`                    | `number`                    | The shard count.                                                                          |
+| `trackPartial`              | `string[]`                  | An array of track properties to keep. `track` will always be present.                     |
+| `defaultSearchPlatform`     | `string`                    | The search platform to use to query songs.                                                |
+| `replaceYouTubeCredentials` | `boolean`                   | Whether the YouTube video titles should be replaced if the Author does not exactly match. |
 
 ## Methods
 
