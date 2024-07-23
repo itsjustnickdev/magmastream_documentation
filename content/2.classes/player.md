@@ -49,6 +49,7 @@ new Magmastream.Player(options: PlayerOptions)
 | [volume](#volume)                       | [setVolume](#setvolume)                       |
 | [isAutoplay](#isautoplay)               | [setAutoplay](#setautoplay)                   |
 |                                         | [stop](#stop)                                 |
+|                                         | [getRecommended](#getRecommended)             |
 
 ### Properties
 
@@ -409,3 +410,11 @@ new Magmastream.Player(options: PlayerOptions)
 > | Description              | Returns |
 > | ------------------------ | ------- |
 > | Stops the current track. | `this`  |
+
+#### • getRecommended()
+
+> Returns: Promise<[TrackData](../typedefs/trackdata)>
+>
+> | Parameter | Type                       |
+> | --------- | -------------------------- |
+> | track     | [Track](../typedefs/track) |
