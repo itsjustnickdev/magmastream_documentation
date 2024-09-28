@@ -49,6 +49,7 @@ new Magmastream.Player(options: PlayerOptions)
 | [volume](#volume)                       | [setVolume](#setvolume)                       |
 | [isAutoplay](#isautoplay)               | [setAutoplay](#setautoplay)                   |
 |                                         | [stop](#stop)                                 |
+|                                         | [getRecommended](#getrecommended)             |
 |                                         | [getRecommended](#getRecommended)             |
 |                                         | [setSponsorBlock](#setsponsorblock)           |
 |                                         | [getSponsorBlock](#getsponsorblock)           |
