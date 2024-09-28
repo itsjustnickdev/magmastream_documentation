@@ -50,6 +50,9 @@ new Magmastream.Player(options: PlayerOptions)
 | [isAutoplay](#isautoplay)               | [setAutoplay](#setautoplay)                   |
 |                                         | [stop](#stop)                                 |
 |                                         | [getRecommended](#getRecommended)             |
+|                                         | [setSponsorBlock](#setsponsorblock)           |
+|                                         | [getSponsorBlock](#getsponsorblock)           |
+|                                         | [deleteSponsorBlock](#deletesponsorblock)     |
 
 ### Properties
 
@@ -396,7 +399,7 @@ new Magmastream.Player(options: PlayerOptions)
 
 #### • setAutoplay()
 
-> Sets the player volume.
+> Sets the player autoplay state.
 >
 > Returns: `this`
 >
@@ -418,3 +421,29 @@ new Magmastream.Player(options: PlayerOptions)
 > | Parameter | Type                       |
 > | --------- | -------------------------- |
 > | track     | [Track](../typedefs/track) |
+
+#### • setSponsorBlock()
+
+> Sets the sponsorblock for the player.
+>
+> Returns: `Promise<void>`
+>
+> | Parameter | Type                                                     |
+> | --------- | -------------------------------------------------------- |
+> | segments  | [SponsorBlockSegment](../typedefs/sponsorblocksegment)[] |
+
+#### • getSponsorBlock()
+
+> Gets the sponsorblock for the player.
+>
+> Returns: Promise<[SponsorBlockSegment](../typedefs/sponsorblocksegment)>
+>
+> | Parameter | Type                                                     |
+> | --------- | -------------------------------------------------------- |
+> | segments  | [SponsorBlockSegment](../typedefs/sponsorblocksegment)[] |
+
+#### • deleteSponsorBlock()
+
+> Deletes the sponsorblock for the player.
+>
+> Returns: `Promise<void>`

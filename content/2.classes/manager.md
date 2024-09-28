@@ -22,7 +22,6 @@ new Magmastream.Manager(options: ManagerOptions)
 | `usePriority`               | `boolean`                   | Whether to use priority mode for selecting nodes.                                         |
 | `useNode`                   | `"leastLoad\|leastPlayers"` | Use the least amount of players or least load?                                            |
 | `plugins`                   | `array`                     | An array of plugins to use.                                                               |
-| `shards`                    | `number`                    | The shard count.                                                                          |
 | `trackPartial`              | `string[]`                  | An array of track properties to keep. `track` will always be present.                     |
 | `defaultSearchPlatform`     | `string`                    | The search platform to use to query songs.                                                |
 | `replaceYouTubeCredentials` | `boolean`                   | Whether the YouTube video titles should be replaced if the Author does not exactly match. |
@@ -62,6 +61,10 @@ Function to send data to the websocket.
 |                                   |                                       | [trackError](#trackerror)               |
 |                                   |                                       | [socketClosed](#socketclosed)           |
 |                                   |                                       | [playerStateUpdate](#playerstateupdate) |
+|                                   |                                       | [SegmentsLoaded](#segmentsloaded)       |
+|                                   |                                       | [SegmentSkipped](#segmentskipped)       |
+|                                   |                                       | [ChapterStarted](#chapterstarted)       |
+|                                   |                                       | [ChaptersLoaded](#chaptersloaded)       |
 
 ### Events
 
@@ -214,6 +217,46 @@ Function to send data to the websocket.
 > | --------- | :-------------------------- |
 > | oldPlayer | [Player](../classes/player) |
 > | newPlayer | [Player](../classes/player) |
+
+#### • SegmentsLoaded
+
+> Emitted when a track has loaded segments.
+>
+> | Parameter | Type                                                                 |
+> | --------- | :------------------------------------------------------------------- |
+> | player    | [Player](../classes/player)                                          |
+> | track     | [Track](../typedefs/track)                                           |
+> | payload   | [SponsorBlockSegmentsLoaded](../typedefs/sponsorblocksegmentsloaded) |
+
+#### • SegmentSkipped
+
+> Emitted when a track has skipped a segment.
+>
+> | Parameter | Type                                                                 |
+> | --------- | :------------------------------------------------------------------- |
+> | player    | [Player](../classes/player)                                          |
+> | track     | [Track](../typedefs/track)                                           |
+> | payload   | [SponsorBlockSegmentSkipped](../typedefs/sponsorblocksegmentskipped) |
+
+#### • ChapterStarted
+
+> Emitted when a track has started a chapter.
+>
+> | Parameter | Type                                                                 |
+> | --------- | :------------------------------------------------------------------- |
+> | player    | [Player](../classes/player)                                          |
+> | track     | [Track](../typedefs/track)                                           |
+> | payload   | [SponsorBlockChapterStarted](../typedefs/sponsorblockchapterstarted) |
+
+#### • ChaptersLoaded
+
+> Emitted when a track has loaded chapters.
+>
+> | Parameter | Type                                                                 |
+> | --------- | :------------------------------------------------------------------- |
+> | player    | [Player](../classes/player)                                          |
+> | track     | [Track](../typedefs/track)                                           |
+> | payload   | [SponsorBlockChaptersLoaded](../typedefs/sponsorblockchaptersloaded) |
 
 ### Properties
 
