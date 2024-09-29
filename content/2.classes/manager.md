@@ -61,10 +61,10 @@ Function to send data to the websocket.
 |                                   |                                       | [trackError](#trackerror)               |
 |                                   |                                       | [socketClosed](#socketclosed)           |
 |                                   |                                       | [playerStateUpdate](#playerstateupdate) |
-|                                   |                                       | [SegmentsLoaded](#segmentsloaded)       |
-|                                   |                                       | [SegmentSkipped](#segmentskipped)       |
-|                                   |                                       | [ChapterStarted](#chapterstarted)       |
-|                                   |                                       | [ChaptersLoaded](#chaptersloaded)       |
+|                                   |                                       | [segmentsLoaded](#segmentsloaded)       |
+|                                   |                                       | [segmentSkipped](#segmentskipped)       |
+|                                   |                                       | [chapterStarted](#chapterstarted)       |
+|                                   |                                       | [chaptersLoaded](#chaptersloaded)       |
 
 ### Events
 
@@ -218,7 +218,7 @@ Function to send data to the websocket.
 > | oldPlayer | [Player](../classes/player) |
 > | newPlayer | [Player](../classes/player) |
 
-#### • SegmentsLoaded
+#### • segmentsLoaded
 
 > Emitted when a track has loaded segments.
 >
@@ -228,7 +228,7 @@ Function to send data to the websocket.
 > | track     | [Track](../typedefs/track)                                           |
 > | payload   | [SponsorBlockSegmentsLoaded](../typedefs/sponsorblocksegmentsloaded) |
 
-#### • SegmentSkipped
+#### • segmentSkipped
 
 > Emitted when a track has skipped a segment.
 >
@@ -238,7 +238,7 @@ Function to send data to the websocket.
 > | track     | [Track](../typedefs/track)                                           |
 > | payload   | [SponsorBlockSegmentSkipped](../typedefs/sponsorblocksegmentskipped) |
 
-#### • ChapterStarted
+#### • chapterStarted
 
 > Emitted when a track has started a chapter.
 >
@@ -248,7 +248,7 @@ Function to send data to the websocket.
 > | track     | [Track](../typedefs/track)                                           |
 > | payload   | [SponsorBlockChapterStarted](../typedefs/sponsorblockchapterstarted) |
 
-#### • ChaptersLoaded
+#### • chaptersLoaded
 
 > Emitted when a track has loaded chapters.
 >
