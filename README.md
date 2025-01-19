@@ -83,7 +83,7 @@ Special thanks to all the contributors who have helped make the Magmastream docu
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the Apache License 2.0. See the [LICENSE](./LICENSE) file for details.
 
 ## Contact
 If you need any assistance or have questions, please open create an issue with your question.
